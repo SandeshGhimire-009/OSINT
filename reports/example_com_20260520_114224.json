@@ -1,0 +1,45 @@
+{
+  "report_info": {
+    "title": "OSINT Investigation Report - example.com",
+    "target": "example.com",
+    "generated": "2026-05-20 11:42:21"
+  },
+  "data": {
+    "whois": {
+      "Domain": "example.com",
+      "Registrar": "RESERVED-Internet Assigned Numbers Authority",
+      "Registrant Email": "Not available",
+      "Registrant Country": "Not available",
+      "Created Date": "1995-08-14 04:00:00",
+      "Expiration Date": "2026-08-13 04:00:00",
+      "Updated Date": "2026-01-16 18:26:50",
+      "Name Servers": "ELLIOTT.NS.CLOUDFLARE.COM, HERA.NS.CLOUDFLARE.COM",
+      "Status": "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientTransferProhibited https://icann.org/epp#clientTransferProhibited, clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+    },
+    "dns": {
+      "A": [
+        "172.66.147.243",
+        "104.20.23.154"
+      ],
+      "MX": [
+        "0 ."
+      ],
+      "NS": [
+        "elliott.ns.cloudflare.com.",
+        "hera.ns.cloudflare.com."
+      ],
+      "TXT": [
+        "\"v=spf1 -all\"",
+        "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\""
+      ],
+      "CNAME": [],
+      "SOA": [
+        "elliott.ns.cloudflare.com. dns.cloudflare.com. 2403488901 10000 2400 604800 1800"
+      ]
+    },
+    "subdomains": [
+      "www"
+    ],
+    "usernames": {}
+  }
+}

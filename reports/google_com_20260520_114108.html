@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Investigation - google.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .no-data {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .record-item {
+            background: #ecf0f1;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-left: 3px solid #3498db;
+            border-radius: 3px;
+            word-break: break-word;
+        }
+        
+        .found {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+        
+        .not-found {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+        
+        .success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .stat-box p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .url {
+            color: #3498db;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .url:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔍 OSINT Investigation - google.com</h1>
+            <div class="meta">
+                <p><strong>Target:</strong> google.com</p>
+                <p><strong>Generated:</strong> 2026-05-20 11:41:08</p>
+            </div>
+        </div>
+<h2>📋 WHOIS Information</h2>
+<div class='section'>
+<table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td><strong>Domain</strong></td><td>google.com</td></tr>
+<tr><td><strong>Registrar</strong></td><td>MarkMonitor, Inc.</td></tr>
+<tr><td><strong>Created Date</strong></td><td>1997-09-15</td></tr>
+<tr><td><strong>Expiration Date</strong></td><td>2028-09-14</td></tr>
+<tr><td><strong>Updated Date</strong></td><td>2019-09-09</td></tr>
+<tr><td><strong>Name Servers</strong></td><td>NS1.GOOGLE.COM, NS2.GOOGLE.COM</td></tr>
+</tbody>
+</table>
+</div>
+<h2>🌐 DNS Records</h2>
+<div class='section'>
+<h3>A Records</h3>
+<div class='record-item'>142.250.182.238</div>
+<h3>MX Records</h3>
+<div class='record-item'>10 smtp.google.com</div>
+<h3>NS Records</h3>
+<div class='record-item'>ns1.google.com</div>
+<div class='record-item'>ns2.google.com</div>
+<div class='record-item'>ns3.google.com</div>
+<div class='record-item'>ns4.google.com</div>
+<p><em>No TXT records found</em></p>
+<p><em>No CNAME records found</em></p>
+<h3>SOA Records</h3>
+<div class='record-item'>ns1.google.com. dns-admin.google.com. 917729926 900 900 1800 60</div>
+</div>
+<h2>🔗 Subdomains</h2>
+<div class='section'>
+<div class='stats'>
+<div class='stat-box'><h3>5</h3><p>Subdomains Found</p></div>
+</div>
+<ul>
+<li><code>www.google.com</code></li>
+<li><code>mail.google.com</code></li>
+<li><code>api.google.com</code></li>
+<li><code>docs.google.com</code></li>
+<li><code>drive.google.com</code></li>
+</ul>
+</div>
+<h2>👤 Username Findings</h2>
+<div class='section'>
+<div class='stats'>
+<div class='stat-box found' style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);'><h3>2</h3><p>Accounts Found</p></div>
+<div class='stat-box' style='background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);'><h3>1</h3><p>Not Found</p></div>
+<div class='stat-box' style='background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);'><h3>0</h3><p>Errors</p></div>
+</div>
+<h3 class='success'>✅ Found Accounts</h3>
+<table>
+<thead><tr><th>Platform</th><th>URL</th></tr></thead>
+<tbody>
+<tr><td>GitHub</td><td><a class='url' href='https://github.com/google' target='_blank'>https://github.com/google</a></td></tr>
+<tr><td>Twitter</td><td><a class='url' href='https://twitter.com/google' target='_blank'>https://twitter.com/google</a></td></tr>
+</tbody>
+</table>
+<h3 class='error'>❌ Not Found (1 platforms)</h3>
+<p>Custom Username</p>
+</div>
+
+        <div class="footer">
+            <p>This report was automatically generated by OSINT Automation Tool</p>
+            <p>For authorized security testing and OSINT research only</p>
+        </div>
+    </div>
+</body>
+</html>

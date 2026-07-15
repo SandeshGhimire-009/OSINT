@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Investigation Report - example.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .no-data {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .record-item {
+            background: #ecf0f1;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-left: 3px solid #3498db;
+            border-radius: 3px;
+            word-break: break-word;
+        }
+        
+        .found {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+        
+        .not-found {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+        
+        .success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .stat-box p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .url {
+            color: #3498db;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .url:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔍 OSINT Investigation Report - example.com</h1>
+            <div class="meta">
+                <p><strong>Target:</strong> example.com</p>
+                <p><strong>Generated:</strong> 2026-05-20 11:42:21</p>
+            </div>
+        </div>
+<h2>📋 WHOIS Information</h2>
+<div class='section'>
+<table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td><strong>Domain</strong></td><td>example.com</td></tr>
+<tr><td><strong>Registrar</strong></td><td>RESERVED-Internet Assigned Numbers Authority</td></tr>
+<tr><td><strong>Registrant Email</strong></td><td>Not available</td></tr>
+<tr><td><strong>Registrant Country</strong></td><td>Not available</td></tr>
+<tr><td><strong>Created Date</strong></td><td>1995-08-14 04:00:00</td></tr>
+<tr><td><strong>Expiration Date</strong></td><td>2026-08-13 04:00:00</td></tr>
+<tr><td><strong>Updated Date</strong></td><td>2026-01-16 18:26:50</td></tr>
+<tr><td><strong>Name Servers</strong></td><td>ELLIOTT.NS.CLOUDFLARE.COM, HERA.NS.CLOUDFLARE.COM</td></tr>
+<tr><td><strong>Status</strong></td><td>clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientTransferProhibited https://icann.org/epp#clientTransferProhibited, clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited</td></tr>
+</tbody>
+</table>
+</div>
+<h2>🌐 DNS Records</h2>
+<div class='section'>
+<h3>A Records</h3>
+<div class='record-item'>172.66.147.243</div>
+<div class='record-item'>104.20.23.154</div>
+<h3>MX Records</h3>
+<div class='record-item'>0 .</div>
+<h3>NS Records</h3>
+<div class='record-item'>elliott.ns.cloudflare.com.</div>
+<div class='record-item'>hera.ns.cloudflare.com.</div>
+<h3>TXT Records</h3>
+<div class='record-item'>"v=spf1 -all"</div>
+<div class='record-item'>"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"</div>
+<p><em>No CNAME records found</em></p>
+<h3>SOA Records</h3>
+<div class='record-item'>elliott.ns.cloudflare.com. dns.cloudflare.com. 2403488901 10000 2400 604800 1800</div>
+</div>
+<h2>🔗 Subdomains</h2>
+<div class='section'>
+<div class='stats'>
+<div class='stat-box'><h3>1</h3><p>Subdomains Found</p></div>
+</div>
+<ul>
+<li><code>www</code></li>
+</ul>
+</div>
+
+        <div class="footer">
+            <p>This report was automatically generated by OSINT Automation Tool</p>
+            <p>For authorized security testing and OSINT research only</p>
+        </div>
+    </div>
+</body>
+</html>

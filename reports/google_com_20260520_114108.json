@@ -1,0 +1,61 @@
+{
+  "report_info": {
+    "title": "OSINT Investigation - google.com",
+    "target": "google.com",
+    "generated": "2026-05-20 11:41:08"
+  },
+  "data": {
+    "whois": {
+      "Domain": "google.com",
+      "Registrar": "MarkMonitor, Inc.",
+      "Created Date": "1997-09-15",
+      "Expiration Date": "2028-09-14",
+      "Updated Date": "2019-09-09",
+      "Name Servers": "NS1.GOOGLE.COM, NS2.GOOGLE.COM"
+    },
+    "dns": {
+      "A": [
+        "142.250.182.238"
+      ],
+      "MX": [
+        "10 smtp.google.com"
+      ],
+      "NS": [
+        "ns1.google.com",
+        "ns2.google.com",
+        "ns3.google.com",
+        "ns4.google.com"
+      ],
+      "TXT": [],
+      "CNAME": [],
+      "SOA": [
+        "ns1.google.com. dns-admin.google.com. 917729926 900 900 1800 60"
+      ]
+    },
+    "subdomains": [
+      "www.google.com",
+      "mail.google.com",
+      "api.google.com",
+      "docs.google.com",
+      "drive.google.com"
+    ],
+    "usernames": {
+      "found": [
+        {
+          "platform": "GitHub",
+          "url": "https://github.com/google"
+        },
+        {
+          "platform": "Twitter",
+          "url": "https://twitter.com/google"
+        }
+      ],
+      "not_found": [
+        {
+          "platform": "Custom Username"
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "report_info": {
+    "title": "Username Investigation Report - github",
+    "target": "github",
+    "generated": "2026-05-20 11:42:43"
+  },
+  "data": {
+    "whois": {},
+    "dns": {},
+    "subdomains": [],
+    "usernames": {
+      "found": [
+        {
+          "platform": "TikTok",
+          "status": "found",
+          "url": "https://www.tiktok.com/@github",
+          "http_status": 200
+        },
+        {
+          "platform": "YouTube",
+          "status": "found",
+          "url": "https://www.youtube.com/@github",
+          "http_status": 200
+        },
+        {
+          "platform": "Instagram",
+          "status": "found",
+          "url": "https://instagram.com/github/",
+          "http_status": 200
+        },
+        {
+          "platform": "Facebook",
+          "status": "found",
+          "url": "https://www.facebook.com/github",
+          "http_status": 200
+        },
+        {
+          "platform": "LinkedIn",
+          "status": "found",
+          "url": "https://www.linkedin.com/in/github",
+          "http_status": 200
+        },
+        {
+          "platform": "GitLab",
+          "status": "found",
+          "url": "https://gitlab.com/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Reddit",
+          "status": "found",
+          "url": "https://www.reddit.com/user/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Stack Overflow",
+          "status": "found",
+          "url": "https://stackoverflow.com/users/-1/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Dev.to",
+          "status": "found",
+          "url": "https://dev.to/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Twitch",
+          "status": "found",
+          "url": "https://www.twitch.tv/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Discord",
+          "status": "found",
+          "url": "https://discordapp.com/users/github",
+          "http_status": 200
+        },
+        {
+          "platform": "GitHub",
+          "status": "found",
+          "url": "https://github.com/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Pinterest",
+          "status": "found",
+          "url": "https://www.pinterest.com/github/",
+          "http_status": 200
+        },
+        {
+          "platform": "Telegram",
+          "status": "found",
+          "url": "https://t.me/github",
+          "http_status": 200
+        },
+        {
+          "platform": "Twitter",
+          "status": "found",
+          "url": "https://twitter.com/github",
+          "http_status": 200
+        }
+      ],
+      "not_found": [
+        {
+          "platform": "Bitbucket",
+          "status": "not_found",
+          "url": "https://bitbucket.org/github",
+          "http_status": 404
+        }
+      ],
+      "errors": []
+    }
+  }
+}
